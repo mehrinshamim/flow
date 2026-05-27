@@ -9,10 +9,10 @@ import {
   useForceRender,
   useTranslation,
 } from '@flow/reader/hooks'
-import { localeNames } from '@flow/reader/locales'
 import { useSettings } from '@flow/reader/state'
 import { dbx, mapToToken, OAUTH_SUCCESS_MESSAGE } from '@flow/reader/sync'
 
+import { localeNames } from '../../../locales'
 import { Button } from '../Button'
 import { Checkbox, Select } from '../Form'
 import { Page } from '../Page'

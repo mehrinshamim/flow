@@ -1,0 +1,1762 @@
+{
+  "project": {
+    "name": "flow-reader",
+    "description": "Next.js-based ePub reader with highlights, annotations, cloud sync, and full-text search",
+    "languages": [
+      "TypeScript",
+      "JavaScript"
+    ],
+    "frameworks": [
+      "Next.js",
+      "React",
+      "Recoil",
+      "Tailwind CSS",
+      "Dexie ORM"
+    ],
+    "analyzedAt": "2026-05-27T14:27:45.210949",
+    "gitCommitHash": "main"
+  },
+  "nodes": [
+    {
+      "id": "file:next.config.js",
+      "type": "config",
+      "name": "next.config.js",
+      "filePath": "next.config.js",
+      "summary": "@type {import('@sentry/nextjs').SentryWebpackPluginOptions}",
+      "tags": [
+        "config",
+        "config"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Module",
+      "tags": [
+        "config",
+        "config"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:postcss.config.js",
+      "type": "config",
+      "name": "postcss.config.js",
+      "filePath": "postcss.config.js",
+      "summary": "Module",
+      "tags": [
+        "config",
+        "config"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:public/manifest.json",
+      "type": "file",
+      "name": "manifest.json",
+      "filePath": "public/manifest.json",
+      "summary": "json.schemastore.org/web-manifest-combined.json\",",
+      "tags": [
+        "file"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:sentry.client.config.js",
+      "type": "config",
+      "name": "sentry.client.config.js",
+      "filePath": "sentry.client.config.js",
+      "summary": "This file configures the initialization of Sentry on the browser.",
+      "tags": [
+        "config",
+        "config"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:sentry.server.config.js",
+      "type": "config",
+      "name": "sentry.server.config.js",
+      "filePath": "sentry.server.config.js",
+      "summary": "This file configures the initialization of Sentry on the server.",
+      "tags": [
+        "config",
+        "config"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/annotation.ts",
+      "type": "utility",
+      "name": "annotation.ts",
+      "filePath": "src/annotation.ts",
+      "summary": "underline: {",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/color.ts",
+      "type": "utility",
+      "name": "color.ts",
+      "filePath": "src/color.ts",
+      "summary": "https://en.wikipedia.org/wiki/Transparency_%28graphic%29#Compositing_calculations",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/Annotation.tsx",
+      "type": "component",
+      "name": "Annotation.tsx",
+      "filePath": "src/components/Annotation.tsx",
+      "summary": "avoid click penetration",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 2,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/Button.tsx",
+      "type": "component",
+      "name": "Button.tsx",
+      "filePath": "src/components/Button.tsx",
+      "summary": "Exports: ButtonProps, Button, IconButton",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/ErrorBoundary.tsx",
+      "type": "component",
+      "name": "ErrorBoundary.tsx",
+      "filePath": "src/components/ErrorBoundary.tsx",
+      "summary": "Update state so the next render will show the fallback UI.",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/Form.tsx",
+      "type": "component",
+      "name": "Form.tsx",
+      "filePath": "src/components/Form.tsx",
+      "summary": "Exports: Checkbox, Select, TextField",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 2,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/Layout.tsx",
+      "type": "component",
+      "name": "Layout.tsx",
+      "filePath": "src/components/Layout.tsx",
+      "summary": "Exports: Layout",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 5,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/Page.tsx",
+      "type": "component",
+      "name": "Page.tsx",
+      "filePath": "src/components/Page.tsx",
+      "summary": "Exports: Page",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/Reader.tsx",
+      "type": "component",
+      "name": "Reader.tsx",
+      "filePath": "src/components/Reader.tsx",
+      "summary": "Exports: ReaderGridView",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 6,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/Row.tsx",
+      "type": "component",
+      "name": "Row.tsx",
+      "filePath": "src/components/Row.tsx",
+      "summary": "Exports: Twisty, Row",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/Tab.tsx",
+      "type": "component",
+      "name": "Tab.tsx",
+      "filePath": "src/components/Tab.tsx",
+      "summary": "Exports: Tab",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/TextSelectionMenu.tsx",
+      "type": "component",
+      "name": "TextSelectionMenu.tsx",
+      "filePath": "src/components/TextSelectionMenu.tsx",
+      "summary": "Exports: TextSelectionMenu",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 4,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/Theme.tsx",
+      "type": "component",
+      "name": "Theme.tsx",
+      "filePath": "src/components/Theme.tsx",
+      "summary": "let `tailwindcss` generate classes",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/base/ActionBar.tsx",
+      "type": "component",
+      "name": "ActionBar.tsx",
+      "filePath": "src/components/base/ActionBar.tsx",
+      "summary": "Exports: Action, ActionBar",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/base/ContextView.tsx",
+      "type": "component",
+      "name": "ContextView.tsx",
+      "filePath": "src/components/base/ContextView.tsx",
+      "summary": "preferred anchor position",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/base/DropZone.tsx",
+      "type": "component",
+      "name": "DropZone.tsx",
+      "filePath": "src/components/base/DropZone.tsx",
+      "summary": "> During the drag, in an event listener for the dragenter and dragover events, you use the data types of the data being dragged to check whether a drop is allowed.",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/base/GridView.tsx",
+      "type": "component",
+      "name": "GridView.tsx",
+      "filePath": "src/components/base/GridView.tsx",
+      "summary": "Exports: GridView",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/base/PaneView.tsx",
+      "type": "component",
+      "name": "PaneView.tsx",
+      "filePath": "src/components/base/PaneView.tsx",
+      "summary": "Exports: Pane, PaneViewProps, PaneView",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/base/SplitView.tsx",
+      "type": "component",
+      "name": "SplitView.tsx",
+      "filePath": "src/components/base/SplitView.tsx",
+      "summary": "Exports: useSplitViewItem, SplitView",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 2,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/base/index.ts",
+      "type": "component",
+      "name": "index.ts",
+      "filePath": "src/components/base/index.ts",
+      "summary": "Module",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/index.ts",
+      "type": "component",
+      "name": "index.ts",
+      "filePath": "src/components/index.ts",
+      "summary": "Module",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/pages/index.ts",
+      "type": "component",
+      "name": "index.ts",
+      "filePath": "src/components/pages/index.ts",
+      "summary": "Module",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/pages/settings.tsx",
+      "type": "component",
+      "name": "settings.tsx",
+      "filePath": "src/components/pages/settings.tsx",
+      "summary": "Exports: Settings",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 3,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/viewlets/AnnotationView.tsx",
+      "type": "component",
+      "name": "AnnotationView.tsx",
+      "filePath": "src/components/viewlets/AnnotationView.tsx",
+      "summary": "Exports: AnnotationView",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 3,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/viewlets/ImageView.tsx",
+      "type": "component",
+      "name": "ImageView.tsx",
+      "filePath": "src/components/viewlets/ImageView.tsx",
+      "summary": "Exports: ImageView",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/viewlets/SearchView.tsx",
+      "type": "component",
+      "name": "SearchView.tsx",
+      "filePath": "src/components/viewlets/SearchView.tsx",
+      "summary": "When inputting with IME and storing state in `valtio`,",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 2,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/viewlets/ThemeView.tsx",
+      "type": "component",
+      "name": "ThemeView.tsx",
+      "filePath": "src/components/viewlets/ThemeView.tsx",
+      "summary": "Exports: ThemeView",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/viewlets/TimelineView.tsx",
+      "type": "component",
+      "name": "TimelineView.tsx",
+      "filePath": "src/components/viewlets/TimelineView.tsx",
+      "summary": "Exports: TimelineView",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/viewlets/TocView.tsx",
+      "type": "component",
+      "name": "TocView.tsx",
+      "filePath": "src/components/viewlets/TocView.tsx",
+      "summary": "Exports: TocView",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/components/viewlets/TypographyView.tsx",
+      "type": "component",
+      "name": "TypographyView.tsx",
+      "filePath": "src/components/viewlets/TypographyView.tsx",
+      "summary": "Define an interface for the Font object",
+      "tags": [
+        "component",
+        "component"
+      ],
+      "complexity": 3,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/db.ts",
+      "type": "utility",
+      "name": "db.ts",
+      "filePath": "src/db.ts",
+      "summary": "TODO: use file hash as id",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/dropbox.d.ts",
+      "type": "file",
+      "name": "dropbox.d.ts",
+      "filePath": "src/dropbox.d.ts",
+      "summary": "eslint-disable-next-line @typescript-eslint/no-unused-vars",
+      "tags": [
+        "file"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/file.ts",
+      "type": "utility",
+      "name": "file.ts",
+      "filePath": "src/file.ts",
+      "summary": "Exports: handleFiles, readBlob, addBook",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/hooks/index.ts",
+      "summary": "Module",
+      "tags": [
+        "file",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/remote/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/hooks/remote/index.ts",
+      "summary": "Module",
+      "tags": [
+        "file",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/remote/useRemote.ts",
+      "type": "hook",
+      "name": "useRemote.ts",
+      "filePath": "src/hooks/remote/useRemote.ts",
+      "summary": "Exports: useRemoteBooks, useRemoteFiles",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/remote/useSync.ts",
+      "type": "hook",
+      "name": "useSync.ts",
+      "filePath": "src/hooks/remote/useSync.ts",
+      "summary": "to remove effect dependency `remoteBooks`",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/theme/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/hooks/theme/index.ts",
+      "summary": "Module",
+      "tags": [
+        "file",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/theme/useBackground.ts",
+      "type": "hook",
+      "name": "useBackground.ts",
+      "filePath": "src/hooks/theme/useBackground.ts",
+      "summary": "[-1, 1, 3, 5]",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/theme/useColorScheme.ts",
+      "type": "hook",
+      "name": "useColorScheme.ts",
+      "filePath": "src/hooks/theme/useColorScheme.ts",
+      "summary": "Exports: useColorScheme, ColorScheme",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/theme/useSourceColor.ts",
+      "type": "hook",
+      "name": "useSourceColor.ts",
+      "filePath": "src/hooks/theme/useSourceColor.ts",
+      "summary": "Exports: useSourceColor",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/theme/useTheme.ts",
+      "type": "hook",
+      "name": "useTheme.ts",
+      "filePath": "src/hooks/theme/useTheme.ts",
+      "summary": "Exports: useTheme, useSetTheme",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useAction.ts",
+      "type": "hook",
+      "name": "useAction.ts",
+      "filePath": "src/hooks/useAction.ts",
+      "summary": "Exports: Action, useSetAction, actionState",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useAsync.ts",
+      "type": "hook",
+      "name": "useAsync.ts",
+      "filePath": "src/hooks/useAsync.ts",
+      "summary": "eslint-disable-next-line react-hooks/exhaustive-deps",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useDisablePinchZooming.ts",
+      "type": "hook",
+      "name": "useDisablePinchZooming.ts",
+      "filePath": "src/hooks/useDisablePinchZooming.ts",
+      "summary": "https://github.com/excalidraw/excalidraw/blob/7eaf47c9d41a33a6230d8c3a16b5087fc720dcfb/src/packages/excalidraw/index.tsx#L66",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useEnv.ts",
+      "type": "hook",
+      "name": "useEnv.ts",
+      "filePath": "src/hooks/useEnv.ts",
+      "summary": "Exports: useEnv",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useForceRender.ts",
+      "type": "hook",
+      "name": "useForceRender.ts",
+      "filePath": "src/hooks/useForceRender.ts",
+      "summary": "Exports: useForceRender",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useLibrary.ts",
+      "type": "hook",
+      "name": "useLibrary.ts",
+      "filePath": "src/hooks/useLibrary.ts",
+      "summary": "Exports: useLibrary",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useList.ts",
+      "type": "hook",
+      "name": "useList.ts",
+      "filePath": "src/hooks/useList.ts",
+      "summary": "Exports: useList, LIST_ITEM_SIZE",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useMobile.ts",
+      "type": "hook",
+      "name": "useMobile.ts",
+      "filePath": "src/hooks/useMobile.ts",
+      "summary": "Exports: mobileState, useMobile",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useTextSelection.ts",
+      "type": "hook",
+      "name": "useTextSelection.ts",
+      "filePath": "src/hooks/useTextSelection.ts",
+      "summary": "https://github.com/juliankrispel/use-text-selection",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useTranslation.ts",
+      "type": "hook",
+      "name": "useTranslation.ts",
+      "filePath": "src/hooks/useTranslation.ts",
+      "summary": "@ts-ignore",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/hooks/useTypography.ts",
+      "type": "hook",
+      "name": "useTypography.ts",
+      "filePath": "src/hooks/useTypography.ts",
+      "summary": "Exports: useTypography",
+      "tags": [
+        "hook",
+        "hook"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/mime.ts",
+      "type": "utility",
+      "name": "mime.ts",
+      "filePath": "src/mime.ts",
+      "summary": "Exports: mapExtToMimes",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/models/index.ts",
+      "type": "model",
+      "name": "index.ts",
+      "filePath": "src/models/index.ts",
+      "summary": "Module",
+      "tags": [
+        "model"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/models/reader.ts",
+      "type": "model",
+      "name": "reader.ts",
+      "filePath": "src/models/reader.ts",
+      "summary": "Exports: Reader, IMatch, ISection",
+      "tags": [
+        "model"
+      ],
+      "complexity": 6,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/models/tree.ts",
+      "type": "model",
+      "name": "tree.ts",
+      "filePath": "src/models/tree.ts",
+      "summary": "Exports: find, flatTree, dfs",
+      "tags": [
+        "model"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/pages/_.tsx",
+      "type": "page",
+      "name": "_.tsx",
+      "filePath": "src/pages/_.tsx",
+      "summary": "Module",
+      "tags": [
+        "page"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/pages/_app.tsx",
+      "type": "page",
+      "name": "_app.tsx",
+      "filePath": "src/pages/_app.tsx",
+      "summary": "Exports: MyApp",
+      "tags": [
+        "page"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/pages/_document.tsx",
+      "type": "page",
+      "name": "_document.tsx",
+      "filePath": "src/pages/_document.tsx",
+      "summary": "https://github.com/vercel/next.js/issues/10285",
+      "tags": [
+        "page"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/pages/api/callback/[provider].ts",
+      "type": "page",
+      "name": "[provider].ts",
+      "filePath": "src/pages/api/callback/[provider].ts",
+      "summary": "Exports: handler",
+      "tags": [
+        "page"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/pages/api/refresh.ts",
+      "type": "page",
+      "name": "refresh.ts",
+      "filePath": "src/pages/api/refresh.ts",
+      "summary": "Exports: handler",
+      "tags": [
+        "page"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/pages/api/utils.ts",
+      "type": "page",
+      "name": "utils.ts",
+      "filePath": "src/pages/api/utils.ts",
+      "summary": "Exports: dbx",
+      "tags": [
+        "page"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/pages/index.tsx",
+      "type": "page",
+      "name": "index.tsx",
+      "filePath": "src/pages/index.tsx",
+      "summary": "Exports: Index",
+      "tags": [
+        "page"
+      ],
+      "complexity": 4,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/pages/success.tsx",
+      "type": "page",
+      "name": "success.tsx",
+      "filePath": "src/pages/success.tsx",
+      "summary": "https://developer.mozilla.org/en-US/docs/Web/API/Window/opener",
+      "tags": [
+        "page"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/platform.ts",
+      "type": "utility",
+      "name": "platform.ts",
+      "filePath": "src/platform.ts",
+      "summary": "https://www.geeksforgeeks.org/how-to-detect-touch-screen-device-using-javascript",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/state.ts",
+      "type": "utility",
+      "name": "state.ts",
+      "filePath": "src/state.ts",
+      "summary": "Exports: TypographyConfiguration, navbarState, defaultSettings",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/styles.ts",
+      "type": "file",
+      "name": "styles.ts",
+      "filePath": "src/styles.ts",
+      "summary": "Exports: updateCustomStyle, activeClass, defaultStyle",
+      "tags": [
+        "file"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/sync.ts",
+      "type": "utility",
+      "name": "sync.ts",
+      "filePath": "src/sync.ts",
+      "summary": "`reject` to skip subsequent api requests",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/utils.ts",
+      "type": "utility",
+      "name": "utils.ts",
+      "filePath": "src/utils.ts",
+      "summary": "Exports: group, copy, clamp",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:src/web.d.ts",
+      "type": "utility",
+      "name": "web.d.ts",
+      "filePath": "src/web.d.ts",
+      "summary": "https://github.com/christianliebel/paint/blob/850a57cd3cc6f6532791abb6d20d9228ceffb74f/types/static.d.ts#L66",
+      "tags": [
+        "utility",
+        "utility"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:tailwind.config.js",
+      "type": "config",
+      "name": "tailwind.config.js",
+      "filePath": "tailwind.config.js",
+      "summary": "@type {import('tailwindcss').Config}",
+      "tags": [
+        "config",
+        "config"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    },
+    {
+      "id": "file:tsconfig.json",
+      "type": "file",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "Module",
+      "tags": [
+        "file",
+        "config"
+      ],
+      "complexity": 1,
+      "languageNotes": "TypeScript/JavaScript"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/Form.tsx",
+      "target": "file:src/components/Button.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Layout.tsx",
+      "target": "file:src/components/viewlets/ThemeView.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Layout.tsx",
+      "target": "file:src/components/viewlets/ImageView.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Layout.tsx",
+      "target": "file:src/components/viewlets/TocView.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Layout.tsx",
+      "target": "file:src/components/viewlets/TypographyView.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Layout.tsx",
+      "target": "file:src/components/viewlets/TimelineView.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Layout.tsx",
+      "target": "file:src/components/viewlets/SearchView.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Layout.tsx",
+      "target": "file:src/components/viewlets/AnnotationView.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Reader.tsx",
+      "target": "file:src/components/TextSelectionMenu.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Reader.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/Reader.tsx",
+      "target": "package:epubjs",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/Reader.tsx",
+      "target": "file:src/components/Annotation.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Reader.tsx",
+      "target": "file:src/components/Tab.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Row.tsx",
+      "target": "file:src/components/Button.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Tab.tsx",
+      "target": "file:src/components/Button.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/TextSelectionMenu.tsx",
+      "target": "file:src/components/Form.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/TextSelectionMenu.tsx",
+      "target": "file:src/components/Button.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/Theme.tsx",
+      "target": "package:internal",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/base/PaneView.tsx",
+      "target": "file:src/components/base/SplitView.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/components/base/PaneView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/base/SplitView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/base/SplitView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/pages/settings.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/pages/settings.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/pages/settings.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/pages/settings.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/AnnotationView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/AnnotationView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/AnnotationView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/AnnotationView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/ImageView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/SearchView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/SearchView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/ThemeView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/ThemeView.tsx",
+      "target": "package:internal",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/TimelineView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/TimelineView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/TocView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/TocView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/TypographyView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/TypographyView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/TypographyView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/TypographyView.tsx",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/components/viewlets/TypographyView.tsx",
+      "target": "package:epubjs",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/db.ts",
+      "target": "package:epubjs",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/db.ts",
+      "target": "file:src/annotation.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/db.ts",
+      "target": "file:src/file.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/db.ts",
+      "target": "file:src/state.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/file.ts",
+      "target": "file:src/sync.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/file.ts",
+      "target": "file:src/db.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/file.ts",
+      "target": "file:src/mime.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/hooks/remote/useRemote.ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/remote/useSync.ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/remote/useSync.ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/remote/useSync.ts",
+      "target": "file:src/hooks/remote/useRemote.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/hooks/remote/useSync.ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/remote/useSync.ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/theme/useBackground.ts",
+      "target": "file:src/hooks/theme/useColorScheme.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/hooks/theme/useBackground.ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/theme/useBackground.ts",
+      "target": "file:src/hooks/theme/useTheme.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/hooks/theme/useBackground.ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/theme/useSourceColor.ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/hooks/useEnv.ts",
+      "target": "file:src/hooks/useMobile.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/hooks/useTextSelection.ts",
+      "target": "file:src/hooks/useForceRender.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/models/reader.ts",
+      "target": "file:src/models/tree.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/models/reader.ts",
+      "target": "package:epubjs",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/pages/_.tsx",
+      "target": "file:src/pages/index.tsx",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/pages/api/callback/[provider].ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/pages/api/refresh.ts",
+      "target": "package:reader",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/pages/api/refresh.ts",
+      "target": "file:src/pages/api/utils.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/state.ts",
+      "target": "package:epubjs",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/styles.ts",
+      "target": "file:src/state.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/styles.ts",
+      "target": "file:src/utils.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/styles.ts",
+      "target": "package:epubjs",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/sync.ts",
+      "target": "file:src/file.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/sync.ts",
+      "target": "file:src/db.ts",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tailwind.config.js",
+      "target": "package:tailwind",
+      "type": "imports",
+      "direction": "outgoing",
+      "weight": 0.8
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:config",
+      "name": "Configuration",
+      "description": "Build, runtime, and app configuration",
+      "nodeIds": [
+        "file:next.config.js",
+        "file:package.json",
+        "file:postcss.config.js",
+        "file:sentry.client.config.js",
+        "file:sentry.server.config.js",
+        "file:tailwind.config.js"
+      ]
+    },
+    {
+      "id": "layer:pages",
+      "name": "Pages & Routes",
+      "description": "Next.js page components and route handlers",
+      "nodeIds": [
+        "file:src/pages/_.tsx",
+        "file:src/pages/_app.tsx",
+        "file:src/pages/_document.tsx",
+        "file:src/pages/api/callback/[provider].ts",
+        "file:src/pages/api/refresh.ts",
+        "file:src/pages/api/utils.ts",
+        "file:src/pages/index.tsx",
+        "file:src/pages/success.tsx"
+      ]
+    },
+    {
+      "id": "layer:components",
+      "name": "UI Components",
+      "description": "React components for the interface",
+      "nodeIds": [
+        "file:src/components/Annotation.tsx",
+        "file:src/components/Button.tsx",
+        "file:src/components/ErrorBoundary.tsx",
+        "file:src/components/Form.tsx",
+        "file:src/components/Layout.tsx",
+        "file:src/components/Page.tsx",
+        "file:src/components/Reader.tsx",
+        "file:src/components/Row.tsx",
+        "file:src/components/Tab.tsx",
+        "file:src/components/TextSelectionMenu.tsx",
+        "file:src/components/Theme.tsx",
+        "file:src/components/base/ActionBar.tsx",
+        "file:src/components/base/ContextView.tsx",
+        "file:src/components/base/DropZone.tsx",
+        "file:src/components/base/GridView.tsx",
+        "file:src/components/base/PaneView.tsx",
+        "file:src/components/base/SplitView.tsx",
+        "file:src/components/base/index.ts",
+        "file:src/components/index.ts",
+        "file:src/components/pages/index.ts",
+        "file:src/components/pages/settings.tsx",
+        "file:src/components/viewlets/AnnotationView.tsx",
+        "file:src/components/viewlets/ImageView.tsx",
+        "file:src/components/viewlets/SearchView.tsx",
+        "file:src/components/viewlets/ThemeView.tsx",
+        "file:src/components/viewlets/TimelineView.tsx",
+        "file:src/components/viewlets/TocView.tsx",
+        "file:src/components/viewlets/TypographyView.tsx"
+      ]
+    },
+    {
+      "id": "layer:hooks",
+      "name": "Hooks & State",
+      "description": "Custom React hooks and state management",
+      "nodeIds": [
+        "file:src/hooks/remote/useRemote.ts",
+        "file:src/hooks/remote/useSync.ts",
+        "file:src/hooks/theme/useBackground.ts",
+        "file:src/hooks/theme/useColorScheme.ts",
+        "file:src/hooks/theme/useSourceColor.ts",
+        "file:src/hooks/theme/useTheme.ts",
+        "file:src/hooks/useAction.ts",
+        "file:src/hooks/useAsync.ts",
+        "file:src/hooks/useDisablePinchZooming.ts",
+        "file:src/hooks/useEnv.ts",
+        "file:src/hooks/useForceRender.ts",
+        "file:src/hooks/useLibrary.ts",
+        "file:src/hooks/useList.ts",
+        "file:src/hooks/useMobile.ts",
+        "file:src/hooks/useTextSelection.ts",
+        "file:src/hooks/useTranslation.ts",
+        "file:src/hooks/useTypography.ts"
+      ]
+    },
+    {
+      "id": "layer:models",
+      "name": "Models & Types",
+      "description": "Data models and TypeScript types",
+      "nodeIds": [
+        "file:src/models/index.ts",
+        "file:src/models/reader.ts",
+        "file:src/models/tree.ts"
+      ]
+    },
+    {
+      "id": "layer:utilities",
+      "name": "Core Utilities",
+      "description": "Essential services: annotations, database, sync, files",
+      "nodeIds": [
+        "file:src/annotation.ts",
+        "file:src/color.ts",
+        "file:src/db.ts",
+        "file:src/file.ts",
+        "file:src/mime.ts",
+        "file:src/platform.ts",
+        "file:src/state.ts",
+        "file:src/sync.ts",
+        "file:src/utils.ts",
+        "file:src/web.d.ts"
+      ]
+    },
+    {
+      "id": "layer:documents",
+      "name": "Documentation",
+      "description": "README and documentation files",
+      "nodeIds": []
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Configuration & Setup",
+      "description": "Next.js, TypeScript, and build configuration",
+      "nodeIds": [
+        "file:next.config.js",
+        "file:package.json",
+        "file:postcss.config.js",
+        "file:sentry.client.config.js",
+        "file:sentry.server.config.js"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Core Utilities",
+      "description": "Essential modules: annotations, database, sync, file handling",
+      "nodeIds": [
+        "file:src/annotation.ts",
+        "file:src/color.ts",
+        "file:src/db.ts",
+        "file:src/file.ts",
+        "file:src/mime.ts"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "State Management",
+      "description": "React hooks and Recoil state management",
+      "nodeIds": [
+        "file:src/hooks/remote/useRemote.ts",
+        "file:src/hooks/remote/useSync.ts",
+        "file:src/hooks/theme/useBackground.ts",
+        "file:src/hooks/theme/useColorScheme.ts",
+        "file:src/hooks/theme/useSourceColor.ts"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "UI Components",
+      "description": "React components that compose the interface",
+      "nodeIds": [
+        "file:src/components/Annotation.tsx",
+        "file:src/components/Button.tsx",
+        "file:src/components/ErrorBoundary.tsx",
+        "file:src/components/Form.tsx",
+        "file:src/components/Layout.tsx",
+        "file:src/components/Page.tsx",
+        "file:src/components/Reader.tsx",
+        "file:src/components/Row.tsx"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Page Routes",
+      "description": "Next.js pages and route handlers",
+      "nodeIds": [
+        "file:src/pages/_.tsx",
+        "file:src/pages/_app.tsx",
+        "file:src/pages/_document.tsx",
+        "file:src/pages/api/callback/[provider].ts",
+        "file:src/pages/api/refresh.ts"
+      ]
+    }
+  ]
+}

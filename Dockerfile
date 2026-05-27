@@ -28,6 +28,7 @@ RUN pnpm i --frozen-lockfile
 COPY --from=builder /app/out/full/ .
 COPY turbo.json turbo.json
 COPY tsconfig.*json .
+COPY .eslintrc.js .eslintrc.js
 
 RUN DOCKER=1 pnpm -F reader build
 
